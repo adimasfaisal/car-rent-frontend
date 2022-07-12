@@ -14,7 +14,7 @@ function App() {
   const [data, setData] = useState([]);
 
   const getAllCars = async () => {
-    const response = await axios.get("http://localhost:8080/api/cars");
+    const response = await axios.get("https://karen-car-rental-backend.herokuapp.com/api/cars");
     setData(response.data.data);
   }
 
